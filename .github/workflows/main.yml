@@ -10,21 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      MY_VARIABLE: "Hello, GitHub Actions!"
+      MY_VARIABLE: "Hello,I am ${{var.USER_NAME}} using GitHub Actions!"
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
+    
     - name: Print Variable
       run: echo $MY_VARIABLE
-
-    - name: Build and Test
-      run: |
-        # Your build and test commands go here
-        echo "Building and testing..."
-
-    - name: Deploy
-      run: |
-        # Your deployment commands go here
-        echo "Deploying..."
