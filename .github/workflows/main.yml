@@ -22,4 +22,4 @@ jobs:
       #     bash gitaction_poc1_2/scripts/myscript.sh
           
       - name: check path
-        run : ls -l gitaction_poc1_2/scripts/
+        run : ls -l gitaction_poc1_2\scripts\
