@@ -14,7 +14,8 @@ jobs:
       USER_NAME: "onkar"
 
     steps:
-      - name: Print variables
+      - name: Print Variable
         run: echo "${{ env.GREETING }} ${{ env.USER_NAME }}! Welcome to GitHub Actions."
 
-      
+      - name: Print Another Message
+        run: echo "${{ vars.USER_NAME}}"
