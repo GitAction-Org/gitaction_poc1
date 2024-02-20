@@ -14,5 +14,4 @@ jobs:
     
     steps:
     - name: Print Variable
-      run: |
-        echo "repository variable : $MY_VARIABLE"
+      run:  echo $MY_VARIABLE
