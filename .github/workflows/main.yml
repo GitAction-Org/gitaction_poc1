@@ -14,10 +14,9 @@ jobs:
       USER_NAME: "onkar"
 
     steps:
-      - name: Print Variable
-        run: echo "Hi am ${{ vars.USER_NAME }} Welcome to GitHub Actions."
-      
-      - name: Execute My Script
-        run: | 
-          chmod +x script.sh
+      - name: Print Greeting
+        run: echo "${{ env.GREETING }} ${{ env.USER_NAME }}! Welcome to GitHub Actions."
+
+      - name: Run Custom Script
+        run: |
           bash ./script.sh
