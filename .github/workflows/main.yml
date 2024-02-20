@@ -5,8 +5,8 @@ on:
     branches:
       - main
 
-env:
-  MY_VARIABLE: ${{ vars.USER_NAME }}
+# env:
+#   MY_VARIABLE: ${{ vars.USER_NAME }}
 
 jobs:
   build:
@@ -14,4 +14,4 @@ jobs:
     
     steps:
     - name: Print Variable
-      run:  echo $MY_VARIABLE
+      run:  echo ${{ vars.USER_NAME }}
