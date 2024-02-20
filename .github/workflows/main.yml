@@ -1,17 +1,20 @@
-name: My Workflow
+name: Example Workflow
 
 on:
   push:
     branches:
       - main
 
-# env:
-#   MY_VARIABLE: ${{ vars.USER_NAME }}
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
+    env:
+      GREETING: "Hello"
+      USER_NAME: "onkar"
+
     steps:
-    - name: Print Variable
-      run:  echo ${{ vars.USER_NAME }}
+      - name: Print variables
+        run: echo "${{ env.GREETING }} ${{ env.USER_NAME }}! Welcome to GitHub Actions."
+
+      
