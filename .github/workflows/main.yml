@@ -17,6 +17,9 @@ jobs:
         run: echo "${{ env.GREETING }} ${{ vars.USER_NAME }}! Welcome to GitHub Actions."
 
 
-      - name: Run Custom Script
-        run: |
-          bash gitaction_poc1_2/scripts/myscript.sh
+      # - name: Run Custom Script
+      #   run: |
+      #     bash gitaction_poc1_2/scripts/myscript.sh
+          
+      - name: check path
+        run : ls -l gitaction_poc1_2/scripts/
