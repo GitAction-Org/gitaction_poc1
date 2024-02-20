@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  MY_VARIABLE: ${{ env.USER_NAME }}
+  MY_VARIABLE: ${{ vars.USER_NAME }}
 
 jobs:
   build:
