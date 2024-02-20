@@ -16,3 +16,6 @@ jobs:
     steps:
       - name: Print Variable
         run: echo "Hi am ${{ vars.USER_NAME }} Welcome to GitHub Actions."
+      
+      - name: Execute My Script
+        run: bash ./script.sh
