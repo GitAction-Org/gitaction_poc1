@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      MY_VARIABLE: "Hello,I am ${{var.USER_NAME}} using GitHub Actions!"
+      MY_VARIABLE: "Hello,I am ${{vars.USER_NAME}} using GitHub Actions!"
 
     steps:
     
