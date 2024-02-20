@@ -4,15 +4,16 @@ on:
   push:
     branches:
       - main
+env:
+    MY_VARIABLE: ${{ vars.USER_NAME }} 
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    env:
-      MY_VARIABLE: "Hello,I am ${{ env.USER_NAME }} using GitHub Actions!"
-
+    
     steps:
     
     - name: Print Variable
-      run: echo $MY_VARIABLE
+      run: echo |
+        echo "repository variable : $MY_VARIABLE"
