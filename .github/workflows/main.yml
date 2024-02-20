@@ -24,5 +24,4 @@ jobs:
 
       - name: Run Custom Script
         run: |
-          bash gitaction_poc2/script.sh
-
+          bash ./gitaction_poc2/script.sh
